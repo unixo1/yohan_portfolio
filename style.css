@@ -1,0 +1,177 @@
+/* ===============================
+   1. 전체 요소 기본 설정
+=============================== */
+/* 전체 요소 크기 계산을 보더박스로 통일 */
+* {
+    box-sizing: border-box;
+}
+
+/* 기본 스타일 */
+body {
+    margin: 0;
+    background-color: #fcfbf6;
+    color: #44444E; 
+}
+
+/* 스크롤 부드럽게 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===============================
+   2. 공통 레이아웃 / 컨테이너
+=============================== */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* 카드 모양 섹션 */
+.section > .container {
+    background: #fdfbf3;
+    border: 1px solid #fffaee;
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 12px 32px rgb(231, 231, 231);
+}
+
+/* ===============================
+   3. 타이포그래피 / 리스트
+=============================== */
+ul {
+    padding-left: 24px;
+    margin: 0;
+}
+
+li {
+    margin: 12px 0;
+    font-size: 17px;
+    line-height: 1.6;
+    word-break: break-word;
+}
+.section h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #37353E;
+}
+
+.section p {
+    color: #444444;
+    margin: 20px 0 24px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.sub-text {
+    display: block;
+    margin-left: 12px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* ===============================
+   4. 헤더 / 네비게이션
+=============================== */
+header, footer {
+    background-color: #EFF5F3;
+    color: #37353E;
+}
+
+/* 헤더 제목 */
+header h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 28px;
+}
+
+/* 헤더 전체 레이아웃 */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+/* 헤더 내 네비게이션 */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* 메뉴 리스트 */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 8px 0 16px;
+}
+
+/* 링크 스타일 */
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: #2a2930; /* 헤더 링크는 흰색 유지 */
+}
+
+header a:hover {
+    background: #d5dad7; /* 호버 시 연한 배경 */
+    
+}
+
+/* ===============================
+   5. 섹션 스타일
+=============================== */
+.section {
+    padding: 100px 0;
+}
+
+/* ===============================
+   6. 프로필 / 이미지 영역
+=============================== */
+.header-hero {
+    display: flex;
+    justify-content: center;
+    padding: 160px 0 28px;
+    min-height: 220px;
+}
+
+.header-hero img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background: #ddd;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   7. 푸터
+=============================== */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #56575f;
+    color: #fff;
+}
+
+/* ===============================
+   8. 애니메이션 / 인터랙션
+=============================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: all 0.7s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
