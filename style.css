@@ -83,7 +83,8 @@ header, footer {
 header h1 {
     margin: 0;
     padding: 20px 0;
-    font-size: 28px;
+    font-size: 36px;
+    color: #26b6b1;
 }
 
 /* 헤더 전체 레이아웃 */
@@ -117,6 +118,7 @@ header a {
     color: inherit;
     padding: 6px 8px;
     border-radius: 6px;
+    font-size: 18px;
     color: #2a2930; /* 헤더 링크는 흰색 유지 */
 }
 
@@ -143,8 +145,8 @@ header a:hover {
 }
 
 .header-hero img {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #e5e5e5;
